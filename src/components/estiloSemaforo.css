@@ -1,0 +1,93 @@
+/* Estilo do container principal do semáforo */
+.semaforo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+/* Estilo para cada luz individual (base) */
+.semaforo-luz {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+    /* Cor de fundo padrão (apagada) */
+    background-color: #333;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Classes para ligar as luzes e aplicar o brilho */
+.luz-acesa-red {
+    background-color: red;
+    box-shadow: 0 0 20px red, 0 0 30px red;
+}
+
+.luz-acesa-yellow {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow, 0 0 30px yellow;
+}
+
+.luz-acesa-green {
+    background-color: lime; /* Usando 'lime' para um verde mais vibrante */
+    box-shadow: 0 0 20px lime, 0 0 30px lime;
+}
+.luz-acesa-blue {
+    background-color: blue; 
+    box-shadow: 0 0 20px blue, 0 0 30px blue;
+}
+
+
+/* Estilos de botões para melhor visualização (Opcional, mas recomendado) */
+.botao-controle {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.botao-red {
+    background-color: red;
+    color: white;
+}
+.botao-red:hover { background-color: darkred; }
+
+.botao-yellow {
+    background-color: yellow;
+    color: black;
+}
+.botao-yellow:hover { background-color: gold; }
+
+.botao-green {
+    background-color: green;
+    color: white;
+}
+.botao-green:hover { background-color: darkgreen; }
+
+.botao-blue {
+    background-color: blue;
+    color: black;
+}
+.botao-blue:hover { background-color: darkblue; }
+
+
+.botao-avancar {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.botao-avancar:hover { background-color: darkblue; }
+
+.botao-retornar {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.botao-retornar:hover { background-color: darkblue; }
